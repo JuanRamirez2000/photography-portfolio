@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+// import "react-photo-album/columns.css";
+import "react-photo-album/masonry.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

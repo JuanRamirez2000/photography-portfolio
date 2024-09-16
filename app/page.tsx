@@ -1,8 +1,7 @@
+import ImageGallery from "@/components/ImageGallery";
 import cloudinary from "cloudinary";
 import { ResourceApiResponse } from "cloudinary";
-import CldImageWrapper from "@/components/CldImageWrapper";
-import ImageModal from "@/components/ImageModal";
-import { MasonryPhotoAlbum } from "react-photo-album";
+import { type Photo } from "react-photo-album";
 
 export default async function Page() {
   const { resources: images }: { resources: ResourceApiResponse["resources"] } =
@@ -13,23 +12,20 @@ export default async function Page() {
       max_results: 50,
     });
 
+  const photos = images.map((image): Photo => {
+    return {
+      src: image.url,
+      width: image.width,
+      height: image.height,
+      key: image.public_id,
+    };
+  });
+
   return (
-    <section className="w-full h-fit columns-2 md:columns-3 2xl:columns-4 p-12">
-      {images.map((image) => {
-        return (
-          <div className="relative" key={image.public_id}>
-            <CldImageWrapper
-              src={image.url}
-              alt=""
-              height={image.height}
-              width={image.width}
-              sizes="100vw"
-              className="object-cover shadow-xl rounded-sm "
-            />
-            <ImageModal image={image} />
-          </div>
-        );
-      })}
-    </section>
+    <main className="flex flex-col items-center">
+      <section className="w-[90%]">
+        <ImageGallery photos={photos} />
+      </section>
+    </main>
   );
 }
