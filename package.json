@@ -16,7 +16,8 @@
     "next-cloudinary": "^6.10.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-photo-album": "^3.0.2"
+    "react-photo-album": "^3.0.2",
+    "yet-another-react-lightbox": "^3.21.5"
   },
   "devDependencies": {
     "@types/node": "^20",
