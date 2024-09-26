@@ -19,8 +19,8 @@ const config: Config = {
   darkMode: "class",
   daisyui: {
     base: true,
-    themes: ["sunset", "pastel"],
-    darkTheme: "sunset",
+    themes: ["night", "nord"],
+    darkTheme: "night",
     styled: true,
     utils: true,
     themeRoot: ":root",

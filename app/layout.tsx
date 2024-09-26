@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider themes={["pastel", "sunset"]}>
+        <ThemeProvider themes={["nord", "night"]}>
           <Navbar />
           {children}
         </ThemeProvider>

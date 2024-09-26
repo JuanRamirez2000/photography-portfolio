@@ -7,21 +7,21 @@ export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
 
   const updateTheme = () => {
-    setTheme(theme == "pastel" ? "sunset" : "pastel");
+    setTheme(theme == "nord" ? "night" : "nord");
   };
 
   return (
     <div>
-      <label className="swap swap-rotate btn btn-accent">
+      <label className="swap swap-rotate btn btn-secondary ">
         <input
           type="checkbox"
-          value="pastel"
+          value="nord"
           className="theme-controller"
-          checked={theme == "pastel"}
+          checked={theme == "nord"}
           onChange={updateTheme}
         />
-        <SunIcon className="swap-off size-8 text-accent-content" />
-        <MoonIcon className="swap-on size-8 text-accent-content" />
+        <SunIcon className="swap-off size-8 text-secondary-content" />
+        <MoonIcon className="swap-on size-8 text-secondary-content" />
       </label>
     </div>
   );
