@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="w-screen flex items-center p-6">
-      <nav className="navbar bg-primary text-primary-content rounded-2xl pr-6 ">
+      <nav className="navbar bg-primary text-primary-content rounded-2xl ">
         <section className="navbar-start">
           <div className="dropdown">
             <button tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,7 +30,7 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-          <Link className="btn btn-ghost text-xl" href={"/"}>
+          <Link className="btn btn-ghost text-lg lg:text-xl" href={"/"}>
             Juan Photography
           </Link>
         </section>

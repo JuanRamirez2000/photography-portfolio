@@ -12,7 +12,7 @@ export default function ThemeSwitcher() {
 
   return (
     <div>
-      <label className="swap swap-rotate btn btn-secondary ">
+      <label className="swap swap-rotate btn btn-ghost ">
         <input
           type="checkbox"
           value="nord"
@@ -20,8 +20,8 @@ export default function ThemeSwitcher() {
           checked={theme == "nord"}
           onChange={updateTheme}
         />
-        <SunIcon className="swap-off size-8 text-secondary-content" />
-        <MoonIcon className="swap-on size-8 text-secondary-content" />
+        <SunIcon className="swap-off size-6 lg:size-8 text-secondary-content" />
+        <MoonIcon className="swap-on size-6 lg:size-8 text-secondary-content" />
       </label>
     </div>
   );
