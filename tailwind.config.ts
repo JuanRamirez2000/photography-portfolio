@@ -15,6 +15,15 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  darkMode: "class",
+  daisyui: {
+    base: true,
+    themes: ["forest", "pastel"],
+    darkTheme: "forest",
+    styled: true,
+    utils: true,
+    themeRoot: ":root",
+  },
 };
 export default config;

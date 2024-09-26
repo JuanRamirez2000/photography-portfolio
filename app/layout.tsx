@@ -5,7 +5,7 @@ import "./globals.css";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "react-photo-album/masonry.css";
-import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-blue-50 flex flex-col items-center ">
-        <Navbar />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <ThemeProvider themes={["pastel", "forest"]}>{children}</ThemeProvider>
       </body>
     </html>
   );
