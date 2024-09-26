@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider themes={["pastel", "forest"]}>{children}</ThemeProvider>
+        <ThemeProvider themes={["pastel", "sunset"]}>{children}</ThemeProvider>
       </body>
     </html>
   );

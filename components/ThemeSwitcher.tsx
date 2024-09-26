@@ -7,7 +7,7 @@ export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
 
   const updateTheme = () => {
-    setTheme(theme == "pastel" ? "forest" : "pastel");
+    setTheme(theme == "pastel" ? "sunset" : "pastel");
   };
 
   return (
