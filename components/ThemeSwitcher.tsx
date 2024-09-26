@@ -20,8 +20,8 @@ export default function ThemeSwitcher() {
           checked={theme == "pastel"}
           onChange={updateTheme}
         />
-        <SunIcon className="swap-off h-10 w-10 text-current" />
-        <MoonIcon className="swap-on h-10 w-10 text-current" />
+        <SunIcon className="swap-off size-8 text-current" />
+        <MoonIcon className="swap-on size-8 text-current" />
       </label>
     </div>
   );
