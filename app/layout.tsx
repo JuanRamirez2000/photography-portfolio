@@ -6,6 +6,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
 import "react-photo-album/masonry.css";
 import { ThemeProvider } from "next-themes";
+import Navbar from "@/components/Mavbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider themes={["pastel", "sunset"]}>{children}</ThemeProvider>
+        <ThemeProvider themes={["pastel", "sunset"]}>
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

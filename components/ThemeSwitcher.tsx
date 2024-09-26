@@ -12,7 +12,7 @@ export default function ThemeSwitcher() {
 
   return (
     <div>
-      <label className="swap swap-rotate">
+      <label className="swap swap-rotate btn btn-accent">
         <input
           type="checkbox"
           value="pastel"
@@ -20,8 +20,8 @@ export default function ThemeSwitcher() {
           checked={theme == "pastel"}
           onChange={updateTheme}
         />
-        <SunIcon className="swap-off size-8 text-current" />
-        <MoonIcon className="swap-on size-8 text-current" />
+        <SunIcon className="swap-off size-8 text-accent-content" />
+        <MoonIcon className="swap-on size-8 text-accent-content" />
       </label>
     </div>
   );
