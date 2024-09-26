@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="flex flex-col h-screen">
         <ThemeProvider themes={["nord", "night"]}>
           <Navbar />
           {children}
