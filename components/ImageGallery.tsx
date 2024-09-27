@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import {
+  ColumnsPhotoAlbum,
   MasonryPhotoAlbum,
   Photo,
   RenderImageContext,
@@ -39,7 +40,7 @@ export default function PhotoGallery({ photos }: { photos: Photo[] }) {
   const [index, setIndex] = useState<number>(-1);
 
   return (
-    <section className="w-[90%]">
+    <>
       <Lightbox
         index={index}
         slides={photos}
@@ -47,10 +48,9 @@ export default function PhotoGallery({ photos }: { photos: Photo[] }) {
         close={() => setIndex(-1)}
         plugins={[Counter]}
       />
-      <MasonryPhotoAlbum
+      <ColumnsPhotoAlbum
         photos={photos}
         render={{ image: renderNextImage }}
-        defaultContainerWidth={1200}
         spacing={30}
         onClick={({ index: current }) => setIndex(current)}
         columns={(containerWidth) => {
@@ -60,13 +60,7 @@ export default function PhotoGallery({ photos }: { photos: Photo[] }) {
           if (containerWidth < 2000) return 5;
           return 6;
         }}
-        sizes={{
-          size: "1168px",
-          sizes: [
-            { viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" },
-          ],
-        }}
       />
-    </section>
+    </>
   );
 }

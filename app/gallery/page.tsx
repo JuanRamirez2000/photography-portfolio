@@ -22,7 +22,7 @@ export default async function Page() {
   });
 
   return (
-    <main className="flex flex-col items-center w-full">
+    <main className="p-6 flex flex-col overflow-x-hidden">
       <ImageGallery photos={photos} />
     </main>
   );
