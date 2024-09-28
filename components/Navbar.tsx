@@ -18,6 +18,36 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
+            <li className="dropdown">
+              <button tabIndex={1} className="btn">
+                Gallery
+              </button>
+              <ul
+                tabIndex={1}
+                className="menu dropdown-content bg-base-100 text-base-content rounded-box z-[1] mt-3 w-44 p-2 shadow-lg gap-2"
+              >
+                <li>
+                  <Link className="btn" href={"/gallery"}>
+                    All pics
+                  </Link>
+                </li>
+                <li>
+                  <Link className="btn" href={"/gallery/portait"}>
+                    Portaits
+                  </Link>
+                </li>
+                <li>
+                  <Link className="btn" href={"/gallery/landscape"}>
+                    Landscapes
+                  </Link>
+                </li>
+                <li>
+                  <Link className="btn" href={"/gallery/graduation"}>
+                    Graduation
+                  </Link>
+                </li>
+              </ul>
+            </li>
             <li>
               <Link
                 className="btn"
@@ -39,6 +69,36 @@ export default function Navbar() {
             <Link className="btn" href={"/"}>
               Home
             </Link>
+          </li>
+          <li className="dropdown">
+            <button tabIndex={1} className="btn">
+              Gallery
+            </button>
+            <ul
+              tabIndex={1}
+              className="menu dropdown-content bg-base-100 text-base-content rounded-box z-[1] mt-3 w-44 p-2 shadow-lg gap-2"
+            >
+              <li>
+                <Link className="btn" href={"/gallery"}>
+                  All pics
+                </Link>
+              </li>
+              <li>
+                <Link className="btn" href={"/gallery/portait"}>
+                  Portaits
+                </Link>
+              </li>
+              <li>
+                <Link className="btn" href={"/gallery/landscape"}>
+                  Landscapes
+                </Link>
+              </li>
+              <li>
+                <Link className="btn" href={"/gallery/graduation"}>
+                  Graduation
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             <Link
