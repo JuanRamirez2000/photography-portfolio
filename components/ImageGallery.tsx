@@ -5,6 +5,7 @@ import { useState } from "react";
 import {
   ColumnsPhotoAlbum,
   MasonryPhotoAlbum,
+  RowsPhotoAlbum,
   Photo,
   RenderImageContext,
   RenderImageProps,
@@ -51,14 +52,14 @@ export default function PhotoGallery({ photos }: { photos: Photo[] }) {
       <ColumnsPhotoAlbum
         photos={photos}
         render={{ image: renderNextImage }}
-        spacing={30}
+        spacing={15}
         onClick={({ index: current }) => setIndex(current)}
         columns={(containerWidth) => {
-          if (containerWidth < 400) return 2;
-          if (containerWidth < 800) return 3;
-          if (containerWidth < 1200) return 4;
-          if (containerWidth < 2000) return 5;
-          return 6;
+          if (containerWidth < 1200) return 2;
+          if (containerWidth < 1800) return 3;
+          if (containerWidth < 2000) return 4;
+          if (containerWidth < 2400) return 5;
+          return 8;
         }}
       />
     </>

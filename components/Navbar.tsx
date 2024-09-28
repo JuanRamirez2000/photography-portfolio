@@ -1,18 +1,17 @@
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import ThemeSwitcher from "./ThemeSwitcher";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="navbar shadow-md rounded-lg w-screen">
-      <section className="navbar-start">
+    <nav className="navbar shadow-md rounded-lg w-screen px-6">
+      <section className="navbar-start ">
         <div className="dropdown">
           <button tabIndex={0} className="btn btn-ghost lg:hidden">
             <Bars3Icon className="size-7" />
           </button>
           <ul
             tabIndex={0}
-            className="menu menu-md dropdown-content rounded-box z-[1] mt-3 w-44 p-2 shadow-lg gap-2"
+            className="menu menu-md dropdown-content bg-base-100 text-base-content rounded-box z-[1] mt-3 w-44 p-2 shadow-lg gap-2"
           >
             <li>
               <Link className="btn" href={"/"}>
@@ -21,11 +20,8 @@ export default function Navbar() {
             </li>
             <li>
               <Link className="btn" href={"/gallery"}>
-                Gallery
+                Let&apos;s Chat
               </Link>
-            </li>
-            <li>
-              <a className="btn">Links</a>
             </li>
           </ul>
         </div>
@@ -33,7 +29,7 @@ export default function Navbar() {
           Juan Photography
         </Link>
       </section>
-      <section className="navbar-center hidden lg:flex">
+      <section className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-xl gap-2">
           <li>
             <Link className="btn" href={"/"}>
@@ -41,17 +37,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="btn" href={"/gallery"}>
-              Gallery
+            <Link className="btn" href={"/contact"}>
+              Let&apos;s Chat
             </Link>
           </li>
-          <li>
-            <a className="btn">Links</a>
-          </li>
         </ul>
-      </section>
-      <section className="navbar-end">
-        <ThemeSwitcher />
       </section>
     </nav>
   );
