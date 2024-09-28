@@ -46,6 +46,11 @@ export default function Navbar() {
                     Graduation
                   </Link>
                 </li>
+                <li>
+                  <Link className="btn" href={"/gallery/film"}>
+                    Film
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>
@@ -96,6 +101,11 @@ export default function Navbar() {
               <li>
                 <Link className="btn" href={"/gallery/graduation"}>
                   Graduation
+                </Link>
+              </li>
+              <li>
+                <Link className="btn" href={"/gallery/film"}>
+                  Film
                 </Link>
               </li>
             </ul>
