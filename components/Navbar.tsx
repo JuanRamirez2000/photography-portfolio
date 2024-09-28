@@ -19,7 +19,11 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link className="btn" href={"/gallery"}>
+              <Link
+                className="btn"
+                href={"https://www.instagram.com/juan_r_photos/"}
+                target="_blank"
+              >
                 Let&apos;s Chat
               </Link>
             </li>
@@ -37,7 +41,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="btn" href={"/contact"}>
+            <Link
+              className="btn"
+              href={"https://www.instagram.com/juan_r_photos/"}
+              target="_blank"
+            >
               Let&apos;s Chat
             </Link>
           </li>
