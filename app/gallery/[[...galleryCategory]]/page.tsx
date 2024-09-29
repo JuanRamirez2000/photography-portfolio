@@ -8,7 +8,6 @@ export default async function Page({
 }: {
   params: { galleryCategory: string };
 }) {
-  console.log(params.galleryCategory);
   const { resources: images }: { resources: ResourceApiResponse["resources"] } =
     !params.galleryCategory
       ? await cloudinary.v2.api.resources({
