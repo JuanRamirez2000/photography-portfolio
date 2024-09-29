@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="flex flex-col h-fit min-h-screen w-screen overflow-y-auto overflow-x-hidden">
-        <ThemeProvider themes={["nord", "night"]}>
+        <ThemeProvider themes={["nord"]}>
           <Navbar />
           {children}
         </ThemeProvider>

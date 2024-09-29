@@ -19,8 +19,7 @@ const config: Config = {
   darkMode: "class",
   daisyui: {
     base: true,
-    themes: ["dark", "nord"],
-    darkTheme: "dark",
+    themes: ["nord"],
     styled: true,
     utils: true,
     themeRoot: ":root",
