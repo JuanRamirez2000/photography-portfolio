@@ -24,7 +24,7 @@ const FILM_IMAGE =
 
 export default async function Page() {
   return (
-    <main className="relative w-full min-h-screen h-full flex flex-col items-center px-5 lg:px-10 lg:h-fit">
+    <main className="relative w-full min-h-screen h-full flex flex-col items-center px-5 lg:px-10 lg:h-fit pb-24">
       <section className="w-full py-16 max-w-screen-xl h-fit">
         <div className="relative w-full h-72  lg:h-[48rem] shadow-2xl">
           <Image

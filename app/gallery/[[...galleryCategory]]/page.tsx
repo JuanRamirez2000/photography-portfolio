@@ -30,7 +30,7 @@ export default async function Page({
   });
 
   return (
-    <main className="w-full max-w-full h-fit grow p-2 sm:p-4">
+    <main className="w-full max-w-full h-fit grow p-2 sm:p-8">
       <ImageGallery photos={photos} />
     </main>
   );
