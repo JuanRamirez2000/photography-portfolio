@@ -79,7 +79,7 @@ export default async function Page() {
 
       <section className="w-full h-full max-w-screen-3xl">
         <ul className="flex flex-col gap-10 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:justify-items-center size-full">
-          <li className="relative w-full lg:w-3/4 h-[52rem] cursor-pointer shadow-2xl shadow-cyan-300">
+          <li className="relative w-full lg:w-3/4 h-64 lg:h-[36rem] cursor-pointer shadow-2xl shadow-cyan-300">
             <Link href="/gallery/portait">
               <Image
                 src={PORTAIT_IMAGE}
@@ -88,11 +88,11 @@ export default async function Page() {
                 className="object-cover rounded-lg"
               />
               <div className="absolute inset-0 z-10 flex items-end justify-center duration-300 lg:opacity-0 lg:hover:opacity-100 rounded-lg bg-gradient-to-t from-cyan-300/[99%] pb-20">
-                <p className="text-3xl font-semibold text-cyan-50">Portait</p>
+                <p className="text-3xl font-semibold text-cyan-50">Portrait</p>
               </div>
             </Link>
           </li>
-          <li className="relative w-full lg:w-3/4 h-[52rem] cursor-pointer shadow-2xl shadow-emerald-300">
+          <li className="relative w-full lg:w-3/4 h-64 lg:h-[36rem] cursor-pointer shadow-2xl shadow-emerald-300">
             <Link href="/gallery/landscape">
               <Image
                 src={LANDSCAPE_IMAGE}
@@ -107,7 +107,7 @@ export default async function Page() {
               </div>
             </Link>
           </li>
-          <li className="relative w-full lg:w-3/4 h-[52rem] cursor-pointer shadow-2xl shadow-yellow-300">
+          <li className="relative w-full lg:w-3/4 h-64 lg:h-[36rem] cursor-pointer shadow-2xl shadow-yellow-300">
             <Link href="/gallery/graduation">
               <Image
                 src={GRAD_IMAGE}
@@ -122,7 +122,7 @@ export default async function Page() {
               </div>
             </Link>
           </li>
-          <li className="relative w-full lg:w-3/4 h-[52rem] cursor-pointer shadow-2xl shadow-orange-300">
+          <li className="relative w-full lg:w-3/4 h-64 lg:h-[36rem] cursor-pointer shadow-2xl shadow-orange-300">
             <Link href="/gallery/film">
               <Image
                 src={FILM_IMAGE}
